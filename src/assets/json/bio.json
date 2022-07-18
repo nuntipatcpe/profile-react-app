@@ -6,5 +6,10 @@
     {
         "id" : "project",
         "data" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Reprehenderit perferendis ad iure quae eligendi laudantiumconsequatur optio adipisci praesentium aperiam. Eos at modi,veritatis soluta eligendi necessitatibus commodi ipsam sunt?"
+    },
+    
+    {
+        "id" : "project",
+        "data" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Reprehenderit perferendis ad iure quae eligendi laudantiumconsequatur optio adipisci praesentium aperiam. Eos at modi,veritatis soluta eligendi necessitatibus commodi ipsam sunt?"
     }
 ]
