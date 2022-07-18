@@ -7,10 +7,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 3rem;
+    height: 4rem;
 
     font-family: $fonts-1;
-    font-size: 16px;
+    font-size: $size-smail;
     font-weight: bold;
     ul {
       display: flex;
@@ -34,7 +34,7 @@
     }
   
     p {
-      font-size: 1.5rem;
+      font-size: $size-smail;
       color: $sixty-color;
       cursor: pointer;
     }

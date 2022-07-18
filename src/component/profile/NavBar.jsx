@@ -5,7 +5,7 @@ function Navbar() {
     <div className='navbar'>
        <div className='container'>
         <div className="nav-item">
-          <p>NUNTIPAT Rukpo</p>
+          <p><a href='#home'>NUNTIPAT Rukpo</a></p>
         <ul>
             <li><a href='#about'>About</a></li>
             <li><a href='#resume'>Resume</a></li>

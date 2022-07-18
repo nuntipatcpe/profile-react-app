@@ -1,11 +1,9 @@
 .about {
   @include background;
   background-color: $sixty-color;
-
   .container {
     display: flex;
   }
-
   
   .nav-about {
     width: 50%;
@@ -13,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
     .red{
       color: $thirty-color;
@@ -23,8 +22,9 @@
 
     ul {
         margin-left: 22rem;
-        width: 8rem;
+        width: 10rem;
         font-weight: bold;
+        font-size: $size-smail;
       li {
         margin-top: 0.5rem;
         cursor: pointer;
@@ -37,8 +37,10 @@
   }
 
   .data-about {
+    // padding: 1rem;
     width: 50%;
-    height: 100%;
+    // height: 100%;
+    
     background-color: $ten-color;
     display: flex;
     flex-direction: column;
@@ -47,12 +49,13 @@
 
     .topic {
       align-content: center;
-      height: 70%;
-      font-size: 2rem;
+      height: 30rem;
+      background-color: white;
+      font-size: $size-medium;
       font-weight: bold;
       display: flex;
       align-items: flex-end;
-      padding-bottom: 1rem;
+      padding-bottom: 5rem;
     
         .text{
           display: flex;
@@ -63,10 +66,7 @@
           color: $sixty-color;
           }
         }
-        
     }
-
-
     .content{
       width: 100%;
       height: 100%;
@@ -75,13 +75,13 @@
 
     p{
         color: $sixty-color;
-        text-indent: 3rem;
+        text-indent: 5.5rem;
         letter-spacing: 2px;
         line-height: normal;
         font-family: $fonts-2;
-        font-size: 1rem;
+        font-size: $size-smail;
         // text-align: justify;
-        padding: 1rem;
+        padding:0 2rem 1rem 2rem;
 
         &:lang(th){
             font-family: $fonts-3;
@@ -89,7 +89,7 @@
             text-indent: 3rem;
             letter-spacing: 2px;
             line-height: normal;
-            font-size: 1rem;
+            font-size: $size-smail;
             // text-align: justify;
             padding: 1rem;
         }

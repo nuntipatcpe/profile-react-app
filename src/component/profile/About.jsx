@@ -5,7 +5,7 @@ import { useState } from "react";
 import bio from "../../assets/json/bio.json";
 
 function Experience() {
-  
+
   const [data, setdata] = useState(bio.filter((item)=>item.page==='about'));
   const [color, setColor] = useState("about");
 
@@ -29,7 +29,6 @@ function Experience() {
                 setActive("about");
               }}
             >
-              {" "}
               About us
             </li>
             <li
@@ -39,7 +38,6 @@ function Experience() {
                 setActive("project");
               }}
             >
-              {" "}
               Project
             </li>
           </ul>
@@ -67,6 +65,7 @@ function Experience() {
           {/* <p lang="th">
            ๆไก้ๆไนกีรั้ๆไนกรๆไ้่กรนย่ๆไยกร่ๆไยergergergergกร่ๆไยกร่ๆไยรก่ฟ
           </p> */}
+          
         </div>
       </div>
     </div>

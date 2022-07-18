@@ -1,0 +1,51 @@
+.resume{
+    @include background;
+    background-color: $sixty-color;
+    .container{
+        display: flex;
+    }
+    .education-con{
+        width: 50%;
+        height: 100%;
+        background:$ten-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $sixty-color;
+ 
+        .education-item{
+            height: 50%;
+            font-size: $size-medium;
+            font-weight: bold;
+            display: flex;
+            align-items:flex-end;
+            padding-bottom: 1rem;
+        }
+        .data{
+            height: 50%;
+            text-indent: 3rem;
+            letter-spacing: 2px;
+            line-height: normal;
+            font-family: $fonts-2;
+            font-size: $size-smail;
+            .data-1{
+                .icon{
+                    width: 2rem;
+                    height: 2rem;
+                    position: relative;
+                    left: -2.9rem;
+                    bottom: -2rem;
+                }
+                margin-bottom: 3rem;
+            }
+            p{
+                margin-bottom: .5rem;
+            }
+        }
+    }
+    .experience-con{
+        width: 50%;
+        height: 100%;
+    }
+}
