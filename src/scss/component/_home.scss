@@ -1,31 +1,51 @@
-// @include background-image 
-// @include background('../../assets/imgs/profile.png');
 .home {
   background-color: $sixty-color;
-  height: 650px;
+
+  height: 700px;
   align-items: center;
+
+    .profile-contrack{
+        display: flex;
+      flex-direction: column;
+      position: relative;
+      top: -3.5rem;
+      left: .5rem;
+      .git-icon{
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+      .email{
+        margin-top:.2rem;
+        display: flex;
+        align-items: center;
+        .email-icon{
+        width: 1.5rem;
+        height: 1.5rem;
+        padding-right: .5rem;
+      }
+      }
+      
+      }
   .home-item {
+
     display: flex;
-    max-height: 650px;
     height: 100%;
     .background {
       width: 100%;
-    //   background-color: aqua;
       display: flex;
       align-items: flex-end;
       justify-content: right;
 
+
       picture{
         height: 30rem;
-        width: 30rem;
+        width: 26rem;
         background-image: url('/src/assets/imgs/profile.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        // border:none solid black
       }
-
-      
+    
     }
     .item-1{
         font-family: $fonts-1;
