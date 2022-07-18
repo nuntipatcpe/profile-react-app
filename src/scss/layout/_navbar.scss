@@ -1,0 +1,41 @@
+.navbar{
+    background-color: $ten-color;
+    
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+
+    font-family: $fonts-1;
+    font-size: 16px;
+    font-weight: bold;
+    ul {
+      display: flex;
+      height: 100%;
+      align-items: center;
+    }
+    li {
+      
+      margin-left: 1rem;
+    }
+    a {
+      color: $sixty-color;
+      text-decoration: none;
+      &:hover {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        color: $thirty-color;
+        cursor: pointer;
+      }
+    }
+  
+    p {
+      font-size: 1.5rem;
+      color: $sixty-color;
+      cursor: pointer;
+    }
+  }
