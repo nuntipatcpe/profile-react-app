@@ -1,9 +1,12 @@
 .about {
   @include reset-list;
   background-color: $sixty-color;
+
   .container {
     display: flex;
   }
+
+  
   .nav-about {
     width: 50%;
     height: 100%;
@@ -28,17 +31,11 @@
         &:hover {
           color: $thirty-color;
         }
-        // &:focus {
-        //     color: $thirty-color;
-        // }
-        // &::after{
-        //   color: $ten-color;
-        // }
-    
       }
         
     }
   }
+
   .data-about {
     width: 50%;
     height: 100%;
@@ -48,11 +45,34 @@
     justify-content: center;
     align-items: center;
 
-    h1 {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 1.5rem;
+    .topic {
+      align-content: center;
+      height: 70%;
+      font-size: 2rem;
+      font-weight: bold;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 1rem;
+    
+        .text{
+          display: flex;
+          .text-item-1{
+          color: $thirty-color;
+          }
+          .text-item-2{
+          color: $sixty-color;
+          }
+        }
+        
     }
+
+
+    .content{
+      width: 100%;
+      height: 100%;
+      // background: #000;
+    }
+
     p{
         color: $sixty-color;
         text-indent: 3rem;

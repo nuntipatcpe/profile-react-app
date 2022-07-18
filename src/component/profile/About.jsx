@@ -27,13 +27,24 @@ function Experience() {
         </nav>
 
         <div className="data-about">
-          <h1>MY BIOGRAPHY</h1>
+
+          <div className="topic">
+
+            <div className="text">
+              <div className="text-item-1">M</div>
+              <div className="text-item-2">Y BIOGRAPHY</div>
+            </div>
+               
+          </div>
           
-          {bio.filter((item)=>item.id===data).map((item)=>{
+          <div className="content">
+            {bio.filter((item)=>item.id===data).map((item)=>{
               return (
                 <p key={item.id}>{item.data}</p>
               )
             })}
+          </div>
+          
           {/* <p lang="th">
            ๆไก้ๆไนกีรั้ๆไนกรๆไ้่กรนย่ๆไยกร่ๆไยergergergergกร่ๆไยกร่ๆไยรก่ฟ
           </p> */}

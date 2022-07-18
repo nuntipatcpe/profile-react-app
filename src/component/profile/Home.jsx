@@ -16,7 +16,7 @@ function Home() {
             <div className="row-1">
               <p className="text-highlight">I</p>
               <p className="">'am</p>
-              <p className="text-highlight">N</p>
+              <p className="text-highlight">&nbsp;N</p>
               <p className="">untipat</p>
             </div>
 
