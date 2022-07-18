@@ -5,13 +5,17 @@ import { useState } from "react";
 import bio from "../../assets/json/bio.json";
 
 function Experience() {
-  const [data, setdata] = useState("about");
+  
+  const [data, setdata] = useState(bio.filter((item)=>item.page==='about'));
   const [color, setColor] = useState("about");
 
   const setActive = (str) => {
-    setdata(str);
+    setdata(bio.filter((item)=>item.page===str));
     setColor(str);
   };
+  console.log(data);
+
+
 
   return (
     <div id="about" className="about">
@@ -50,13 +54,12 @@ function Experience() {
           </div>
 
           <div className="content">
-            {bio
-              .filter((item) => item.id === data)
+            {data
               .map((item) => {
                 return (
-                  <>
-                    <p key={item.id}>{item.data}</p>
-                  </>
+                  <div key={item.id}>
+                    <p>{item.data}</p>
+                  </div>
                 );
               })}
           </div>
