@@ -13,10 +13,6 @@
     {
         "id" : 3,
         "page" : "project",
-        "data" : "Lorem ipsum dolor sit amet consectetur adipisicing."
-    },{
-        "id" : 3,
-        "page" : "project",
-        "data" : "Lorem ipsum dolor sit amet consectetur adipisicing."
+        "data" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Reprehenderit perferendis ad iure quae eligendi laudantiumconsequatur optio adipisci praesentium aperiam. Eos at modi,veritatis soluta eligendi necessitatibus commodi ipsam sunt?"
     }
 ]

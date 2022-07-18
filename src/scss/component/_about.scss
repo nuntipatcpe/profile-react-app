@@ -4,14 +4,25 @@
   .container {
     display: flex;
   }
-  
+.container-left{
+  width: 50%;
+  min-height: 90vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
   .nav-about {
-    width: 50%;
-    height: 100%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    // background: #000;
+    // padding-left: 30rem;
+    width: 100%;
+    justify-content: right;
+    margin-right: 3rem;
+    // background: wheat;
 
     .red{
       color: $thirty-color;
@@ -20,9 +31,7 @@
       color: $ten-color;
     }
 
-    ul {
-        margin-left: 22rem;
-        width: 10rem;
+    ul { 
         font-weight: bold;
         font-size: $size-smail;
       li {
@@ -35,28 +44,25 @@
         
     }
   }
+}
+.container-rigth{
+  width: 50%;
+  min-height: 90vh;
+  background: $ten-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // max-height: 90vh;
 
-  .data-about {
-    // padding: 1rem;
-    width: 50%;
-    // height: 100%;
-    
-    background-color: $ten-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    .topic {
-      align-content: center;
-      height: 30rem;
-      background-color: white;
+    .topic {     
       font-size: $size-medium;
       font-weight: bold;
       display: flex;
+      height: 40%;
       align-items: flex-end;
       padding-bottom: 5rem;
-    
         .text{
           display: flex;
           .text-item-1{
@@ -70,30 +76,129 @@
     .content{
       width: 100%;
       height: 100%;
-      // background: #000;
-    }
+      
+       display: flex;  
+       flex-direction: column;
 
-    p{
+         p{
         color: $sixty-color;
-        text-indent: 5.5rem;
+        text-indent: 4rem;
         letter-spacing: 2px;
         line-height: normal;
         font-family: $fonts-2;
         font-size: $size-smail;
-        // text-align: justify;
+      
         padding:0 2rem 1rem 2rem;
 
-        &:lang(th){
-            font-family: $fonts-3;
-            color: $sixty-color;
-            text-indent: 3rem;
-            letter-spacing: 2px;
-            line-height: normal;
-            font-size: $size-smail;
-            // text-align: justify;
-            padding: 1rem;
-        }
+        // &:lang(th){
+        //     font-family: $fonts-3;
+        //     color: $sixty-color;
+        //     text-indent: 3rem;
+        //     letter-spacing: 2px;
+        //     line-height: normal;
+        //     font-size: $size-smail;
+        //     // text-align: justify;
+        //     padding: 1rem;
+        // }
     }
 
-  }
+    }
+
+ 
+  
+
+}
+
+  
+  // .nav-about {
+  //   width: 50%;
+  //   height: 100%;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+    
+
+  //   .red{
+  //     color: $thirty-color;
+  //   }
+  //   .back{
+  //     color: $ten-color;
+  //   }
+
+  //   ul {
+  //       margin-left: 22rem;
+  //       width: 10rem;
+  //       font-weight: bold;
+  //       font-size: $size-smail;
+  //     li {
+  //       margin-top: 0.5rem;
+  //       cursor: pointer;
+  //       &:hover {
+  //         color: $thirty-color;
+  //       }
+  //     }
+        
+  //   }
+  // }
+
+  // .data-about {
+  //   // padding: 1rem;
+  //   width: 50%;
+  //   // height: 100%;
+    
+  //   background-color: $ten-color;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+
+  //   .topic {
+  //     align-content: center;
+  //     height: 30rem;
+  //     background-color: white;
+  //     font-size: $size-medium;
+  //     font-weight: bold;
+  //     display: flex;
+  //     align-items: flex-end;
+  //     padding-bottom: 5rem;
+    
+  //       .text{
+  //         display: flex;
+  //         .text-item-1{
+  //         color: $thirty-color;
+  //         }
+  //         .text-item-2{
+  //         color: $sixty-color;
+  //         }
+  //       }
+  //   }
+  //   .content{
+  //     width: 100%;
+  //     height: 100%;
+  //     // background: #000;
+  //   }
+
+  //   p{
+  //       color: $sixty-color;
+  //       text-indent: 5.5rem;
+  //       letter-spacing: 2px;
+  //       line-height: normal;
+  //       font-family: $fonts-2;
+  //       font-size: $size-smail;
+  //       // text-align: justify;
+  //       padding:0 2rem 1rem 2rem;
+
+  //       &:lang(th){
+  //           font-family: $fonts-3;
+  //           color: $sixty-color;
+  //           text-indent: 3rem;
+  //           letter-spacing: 2px;
+  //           line-height: normal;
+  //           font-size: $size-smail;
+  //           // text-align: justify;
+  //           padding: 1rem;
+  //       }
+  //   }
+
+  // }
 }
