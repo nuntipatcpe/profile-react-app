@@ -14,6 +14,11 @@
     "topic": "HTML",
     "path": "/src/assets/imgs/icon/html.png"
   },
+  {
+    "type": "Language",
+    "topic": "java",
+    "path": "/src/assets/imgs/icon/java.png"
+  },
 
   {
     "type": "Framework&Libery",
