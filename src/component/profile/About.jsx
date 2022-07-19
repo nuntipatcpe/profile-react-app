@@ -9,7 +9,7 @@ function Experience() {
   const [color, setColor] = useState("about");
 
   const setActive = (str) => {
-    setdata(bio.filter((item) => item.page === str));
+    setdata(bio.filter((item) => item.page.includes(str)));
     setColor(str);
   };
   console.log(data);

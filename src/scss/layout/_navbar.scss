@@ -48,6 +48,7 @@
       right: 3rem;
       top: 1.5rem;
       display: block;
+      cursor: pointer;
     }
     .head-con{
       display: flex;
@@ -59,7 +60,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
+        cursor: pointer;
         height: 100%;
       }
 
@@ -79,7 +80,7 @@
           background: $ten-color;
         }
         z-index: 1;
-        top: -500%;
+        top:-500%;
         opacity: 0;
         transition: 0.3s ease;
       }

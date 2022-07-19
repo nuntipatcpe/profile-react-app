@@ -1,5 +1,5 @@
 import React from "react";
-import { MdCastForEducation } from 'react-icons/md';
+import { MdCastForEducation ,MdWork} from 'react-icons/md';
 function Resume() {
   return (
     <div id="resume" className="resume">
@@ -16,28 +16,23 @@ function Resume() {
             </div>
             <div className="data-1">
               <MdCastForEducation className="icon"/>
-              <p>{"2561-2565"}</p>
-              <p>{"มหาวิทยาลัยเทคโนโลยีมหานคร"}</p>
-              <p>{"วิศวกรรมศาสตร์, คอมพิวเตอร์"}</p>
+              <p>{"2554-2560"}</p>
+              <p>{"มัธยมวัดหนองจอก"}</p>
+              <p>{"สาขา วิทยาศาสตร์-คณิตศาสตร์"}</p>
             </div>
           </div>
         </div>
 
         <div className="experience-con">
-        <div className="experience-item">Education</div>
+        <div className="experience-item">Experience</div>
           <div className="data">
             <div className="data-1">
-            <MdCastForEducation className="icon"/>
-              <p>{"2561-2565"}</p>
-              <p>{"มหาวิทยาลัยเทคโนโลยีมหานคร"}</p>
-              <p>{"วิศวกรรมศาสตร์, คอมพิวเตอร์"}</p>
+            <MdWork className="icon"/>
+              <p>{"2021-2022"}</p>
+              <p>{"Business Bulletin Service Co., Ltd."}</p>
+              <p>{"Apprentice software developer"}</p>
             </div>
-            <div className="data-1">
-              <MdCastForEducation className="icon"/>
-              <p>{"2561-2565"}</p>
-              <p>{"มหาวิทยาลัยเทคโนโลยีมหานคร"}</p>
-              <p>{"วิศวกรรมศาสตร์, คอมพิวเตอร์"}</p>
-            </div>
+
           </div>
           
         </div>

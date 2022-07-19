@@ -1,0 +1,49 @@
+[
+  {
+    "type": "Language",
+    "topic": "Javascript",
+    "path": "/src/assets/imgs/icon/javascript.png"
+  },
+  {
+    "type": "Language",
+    "topic": "Css",
+    "path": "/src/assets/imgs/icon/css.png"
+  },
+  {
+    "type": "Language",
+    "topic": "HTML",
+    "path": "/src/assets/imgs/icon/html.png"
+  },
+
+  {
+    "type": "Framework&Libery",
+    "topic": "React",
+    "path": "/src/assets/imgs/icon/react.png"
+  },
+
+  {
+    "type": "Framework&Libery",
+    "topic": "Redux",
+    "path": "/src/assets/imgs/icon/redux.png"
+  },
+  {
+    "type": "Framework&Libery",
+    "topic": "Sass",
+    "path": "/src/assets/imgs/icon/sass.png"
+  },
+  {
+    "type": "Other",
+    "topic": "Figma",
+    "path": "/src/assets/imgs/icon/figma.png"
+  },
+  {
+    "type": "Other",
+    "topic": "Git",
+    "path": "/src/assets/imgs/icon/git.png"
+  },
+  {
+    "type": "Other",
+    "topic": "Github",
+    "path": "/src/assets/imgs/icon/github.png"
+  }
+]
