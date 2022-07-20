@@ -35,12 +35,12 @@
     "type": "Framework&Libery",
     "topic": "Sass",
     "path": "/src/assets/imgs/icon/sass.png"
-  },
-  {
+  },{
     "type": "Other",
-    "topic": "Figma",
-    "path": "/src/assets/imgs/icon/figma.png"
+    "topic": "Node",
+    "path": "/src/assets/imgs/icon/node-js.png"
   },
+  
   {
     "type": "Other",
     "topic": "Git",
@@ -50,5 +50,10 @@
     "type": "Other",
     "topic": "Github",
     "path": "/src/assets/imgs/icon/github.png"
+  },
+  {
+    "type": "Other",
+    "topic": "Figma",
+    "path": "/src/assets/imgs/icon/figma.png"
   }
 ]

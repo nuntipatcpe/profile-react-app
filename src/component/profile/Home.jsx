@@ -14,12 +14,14 @@ function Home() {
             <p className="text-highlight text-small">H</p>
             <p className="text-small">ello...</p>
           </div>
+          
           <div className="row-1">
             <p className="text-highlight">I</p>
             <p className="">'am</p>
             <p className="text-highlight">&nbsp;N</p>
             <p className="">untipat</p>
           </div>
+
           <p className="text-small fonts-2">Software Developer </p>
         </div>
          
@@ -30,7 +32,8 @@ function Home() {
             </i>
             <div className="email">
               <MdEmail className="email-icon" />
-              nuntipat.rukpo@gmail.com
+              <p> nuntipat.rukpo@gmail.com</p>
+             
             </div>
           </div>
         </div>

@@ -17,6 +17,7 @@
   .input {
     display: flex;
     justify-content: end;
+    width: auto;
     input {
       width: 50%;
       height: 1rem;
@@ -31,92 +32,115 @@
     }
   }
 
-  .grit-container{
+  .grit-container {
     margin-top: 3rem;
     // background: antiquewhite;
     display: grid;
-    grid-template-columns: 1fr  1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    width: auto;
 
-    .grid-item{
+    .grid-item {
+      display: flex;
+      justify-content: center;
+      height: 400px;
+      margin-bottom: 3rem;
+      .card {
+        width: 70%;
+        height: 100%;
         display: flex;
-        justify-content: center;
-        height: 500px;
-        margin-bottom: 3rem;
-        .card{
-            height: 100%;
-            width: 70%;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0px 0px 6px 3px $ten-color;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            .title{
-                height: 100px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 1.5rem;
-                font-weight: bold;
-            }
-            img{
-                // max-width: 100%;
-                width: 100%;
-                height: 140px;
-                object-fit: cover;
-                object-position: center;
-                margin-bottom: 1rem;
-            }
-            .card-container{
-                
-                height: auto;
-                min-height: 160px;
-                // display: flex;
-                // flex-direction: column;
-                
-                
-                .type{
-                    // width: 100%; 
-                    // background: #000;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    margin-bottom: 1rem;
-                }
-                .deacription{
-                    // white-space:pre; 
-                    width: 100%; 
-                    height: 130px;
-                    // background: #000;
-                    overflow: auto;
-                    text-overflow: ellipsis;
-                    margin-bottom: 1rem;
-                }
-            }
-            .btn-card{
-                display: flex;
-                // background: #000;
-                width: 100%;
-                height: 40px;
-                justify-content: center;
-                button{
-                    width: 70%;
-                    background-color: $ten-color;
-                    color: $sixty-color;
-                    border: 0;
-                    font-weight: bold;
-
-                    &:hover{
-                        font-weight: bold;
-                      // background-color: darkcyan;
-                      transform: scale(1.1);
-                      transition: 0.3s ease;
-                    }
-                }
-            }
-
-            // align-items: center;
-            // justify-content: center;
+        flex-direction: column;
+        box-shadow: 0px 0px 6px 3px $ten-color;
+        padding: 0 1rem;
+        // padding-right: 1rem;
+ 
+        .title {
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.2rem;
+          font-weight: bold;
         }
+        img {
+          // max-width: 100%;
+          width: 100%;
+          height: 120px;
+          object-fit: cover;
+          object-position: center;
+        }
+        .card-container {
+     
+
+          .type {
+            text-transform: uppercase;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 1rem 0;
+            font-weight: bold;
+          }
+          .deacription {
+            // white-space:pre;
+            width: 100%;
+            height: 120px;
+            // background: #000;
+            overflow: auto;
+            text-overflow: ellipsis;
+            margin-bottom: 1rem;
+            h1 {
+              font-weight: bold;
+              margin-bottom: 0.5rem;
+            }
+          }
+        }
+        .btn-card {
+          display: flex;
+          // background: #000;
+          width: 100%;
+          height: 40px;
+          justify-content: center;
+          
+          button {
+            width: 70%;
+            background-color: $ten-color;
+            color: $sixty-color;
+            border: 0;
+            font-weight: bold;
+            &:hover {
+              font-weight: bold;
+              // background-color: darkcyan;
+              transform: scale(1.1);
+              transition: 0.3s ease;
+            }
+          }
+        }
+
+        // align-items: center;
+        // justify-content: center;
+      }
     }
   }
-  
 }
+
+
+@media screen and (max-width: $media-query) {
+ .portfolio {
+  .input {
+    input {
+      width: 100%;
+      margin: 0 2rem;
+    }
+  }
+
+  .grit-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 4rem;
+    .grid-item {
+      margin-bottom: 2rem;
+      .card {
+        width: 60%;
+      }
+    }
+  }
+}
+}
+

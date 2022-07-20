@@ -6,6 +6,7 @@ import Navbar from "../component/profile/NavBar";
 import Resume from "../component/profile/Resume";
 import Skills from "../component/profile/Skills";
 import Portfolio from "../component/profile/Portfolio";
+import Footer from "../component/profile/Footer";
 
 function profile() {
   return (
@@ -16,6 +17,7 @@ function profile() {
       <Resume />
       <Skills />
       <Portfolio />
+      <Footer />
     </div>
   );
 }

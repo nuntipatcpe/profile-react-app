@@ -17,7 +17,6 @@ function Experience() {
   return (
     <div id="about" className="about">
       <div className="container">
-
         <div className="container-left">
           <nav className="nav-about">
             <ul>
@@ -38,14 +37,12 @@ function Experience() {
                 }}
               >
                 Project
-               
               </li>
             </ul>
           </nav>
         </div>
-        
+
         <div className="container-rigth">
-  
           <div className="topic">
             <div className="text">
               <div className="text-item-1">M</div>
@@ -55,18 +52,13 @@ function Experience() {
 
           <div className="content">
             {data.map((item) => {
-              return (
-                <div key={item.id}>
-                  <p>{item.data}</p>
-                </div>
-              );
+              return <p key={item.id}>{item.data}</p>;
             })}
           </div>
 
           {/* <p lang="th">
            ๆไก้ๆไนกีรั้ๆไนกรๆไ้่กรนย่ๆไยกร่ๆไยergergergergกร่ๆไยกร่ๆไยรก่ฟ
           </p> */}
-       
         </div>
       </div>
     </div>

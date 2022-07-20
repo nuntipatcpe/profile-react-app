@@ -36,7 +36,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: $media-query) {
   .navbar {
 
     position: relative;
