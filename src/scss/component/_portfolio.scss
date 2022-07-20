@@ -141,20 +141,7 @@
               transition: 0.3s ease;
             }
           }
-          // button {
-          //   width: 70%;
-          //   background-color: $ten-color;
-          //   color: $sixty-color;
-          //   border: 0;
-          //   font-weight: bold;
-          //   a{
-          //     background-color: #000;
-          //     width: 100%;
-          //     height: 100%;
-          //   }
-    
-           
-          // }
+
         }
     }
   }
@@ -174,7 +161,7 @@
     grid-template-columns: 1fr 1fr;
     padding: 0 4rem;
     .grid-item {
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
       .card {
         width: 60%;
       }

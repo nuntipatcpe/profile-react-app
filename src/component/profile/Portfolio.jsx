@@ -73,7 +73,7 @@ function Portfolio() {
                 <div className="btn-card">
                     <a
                       target="_blank"
-                      href="https://www.w3schools.com/cssref/pr_background-color.asp"
+                      href="https://www.apple.com/th/"
                     >
                       {" "}
                       View Code

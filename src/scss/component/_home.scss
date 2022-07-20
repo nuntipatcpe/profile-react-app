@@ -1,130 +1,122 @@
 .home {
-  background-color: $sixty-color;
-
   @include background;
-
-  .container {
-    display: flex;
+  height: 90vh;
+  font-weight: bold;
+  .active {
+    color: $thirty-color;
   }
-  .hello-container {
-    width: 50%;
-    height: 90vh;
-    font-family: $fonts-1;
-    font-weight: bold;
 
+  .container-top {
+    // padding: 5rem 0;
     display: flex;
     flex-direction: column;
+    height: 100%;
     justify-content: center;
+    position: relative;
 
-    .container-top {
+    .item {
+      font-size: $size-medium;
+      display: flex;
+      margin-bottom: 1rem;
+    }
+    .big-size {
+      font-size: $size-big;
+    }
+    .profile-contrack {
+      position: absolute;
+      bottom: 0;
+      left: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 50%;
-      justify-content: end;
-      position: relative;
-      top: 4rem;
-
-      .row-1 {
-        display: flex;
-      }
-      p {
-        content: "a";
-        color: $ten-color;
-        font-size: 5rem;
-        // font-weight: bold;
-      }
-
-      .text-small {
-        font-size: 2.5rem;
-        padding: 1rem 0;
-      }
-      .text-highlight {
-        color: $thirty-color;
-      }
-
-      .fonts-2 {
-        font-family: $fonts-2;
-        color: $thirty-color;
-      }
-    }
-
-    .profile-contrack {
-      display: flex;
-      flex-direction: column;
-      height: 50%;
-      justify-content: end;
-
-      // position: relative;
-      // left: -8rem;
-
+      height: 80px;
       .git-icon {
         width: 2rem;
         height: 2rem;
       }
+      .email-icon {
+        width: 2rem;
+        height: 2rem;
+      }
       .email {
-        margin-top: 0.2rem;
+        margin-top: 1rem;
         display: flex;
         align-items: center;
-        .email-icon {
-          width: 2rem;
-          height: 2rem;
-          padding-right: 0.5rem;
+        p {
+          margin-left: 1rem;
         }
       }
     }
-  }
-  .background {
-    width: 50%;
-    height: 90vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: right;
-
-    picture {
-      height: 25rem;
-      width: 25rem;
-      background-image: url("/src/assets/imgs/profile.png");
-      background-repeat: no-repeat;
-      background-position: bottom;
-      background-size: contain;
-      // object-fit: cover;
+    .background {
+      z-index: -1;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: right;
+      picture {
+        height: 25rem;
+        width: 25rem;
+        background-image: url("/src/assets/imgs/profile.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        // object-fit: cover;
+      }
     }
   }
 }
 
 @media screen and (max-width: $media-query) {
+  $size-medium: 1.5rem;
+  $size-big: 3.5rem;
   .home {
-    .container {
+    max-height: 90vh;
+
+    .container-top {
+      // padding: 5rem 0;
       display: flex;
       flex-direction: column;
-      height: 90vh;
+      height: 100%;
+      justify-content: center;
       align-items: center;
-    }
-    .hello-container {
-      .container-top {
-    
-        .row-1 {
-          display: flex;
-          justify-content: center;
-        
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10rem;
+
+        .item {
+          font-size: $size-medium;
         }
-        .fonts-2 {
-          display: flex;
-          justify-content: center;
-          font-size: 1.5rem;
+        .big-size {
+          font-size: $size-big;
         }
       }
 
       .profile-contrack {
         position: absolute;
-        left: 1rem;
-        bottom: 1rem;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80px;
+        .git-icon {
+          width: 2rem;
+          height: 2rem;
+        }
+        .email-icon {
+          width: 2rem;
+          height: 2rem;
+        }
         .email {
-          display: flex;
-          align-items: center;
           p {
             display: none;
+            margin-left: 1rem;
           }
           &:hover {
             p {
@@ -132,19 +124,234 @@
               color: $thirty-color;
             }
           }
-          .email-icon {
-            padding-right: 0;
-          }
         }
       }
-    }
-    .background {
-      display: flex;
-      justify-content: center;
-      picture {
-        height: 23rem;
-        width: 23rem;
+
+      .background {
+        z-index: -1;
+        position: absolute;
+        right: auto;
+        left: auto;
+        bottom: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: right;
+        picture {
+          height: 20rem;
+          width: 20rem;
+          background-image: url("/src/assets/imgs/profile.png");
+          background-repeat: no-repeat;
+          background-position: bottom;
+          background-size: contain;
+          // object-fit: cover;
+        }
       }
     }
   }
 }
+
+// .home {
+//   background-color: $sixty-color;
+//   background-color: #ccc;
+//   height: 70vh;
+//   @include background;
+//   .container {
+//     display: flex;
+//     height: 100%;
+//   }
+//   .hello-container {
+//     width: 50%;
+//     height: 100%;
+//     font-family: $fonts-1;
+//     font-weight: bold;
+
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+
+//     .container-top {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       height: 50%;
+//       justify-content: end;
+//       position: relative;
+//       top: 4rem;
+
+//       .row-1 {
+//         display: flex;
+//       }
+//       p {
+//         content: "a";
+//         color: $ten-color;
+//         font-size: 5rem;
+//         // font-weight: bold;
+//       }
+
+//       .text-small {
+//         font-size: 2.5rem;
+//         padding: 1rem 0;
+//       }
+//       .text-highlight {
+//         color: $thirty-color;
+//       }
+
+//       .fonts-2 {
+//         font-family: $fonts-2;
+//         color: $thirty-color;
+//       }
+//     }
+
+//     .profile-contrack {
+//       display: flex;
+//       flex-direction: column;
+//       height: 50%;
+//       justify-content: end;
+
+//       // position: relative;
+//       // left: -8rem;
+
+//       .git-icon {
+//         width: 2rem;
+//         height: 2rem;
+//       }
+//       .email {
+//         margin-top: 0.2rem;
+//         display: flex;
+//         align-items: center;
+//         .email-icon {
+//           width: 2rem;
+//           height: 2rem;
+//           padding-right: 0.5rem;
+//         }
+//       }
+//     }
+//   }
+//   .background {
+//     width: 50%;
+//     display: flex;
+//     align-items: flex-end;
+//     justify-content: right;
+//     picture {
+//       height: 25rem;
+//       width: 25rem;
+//       background-image: url("/src/assets/imgs/profile.png");
+//       background-repeat: no-repeat;
+//       background-position: bottom;
+//       background-size: contain;
+//       // object-fit: cover;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: $media-query) {
+//   .home {
+//     .container {
+//       display: flex;
+//       flex-direction: column;
+//       height: 90vh;
+//       align-items: center;
+//     }
+//     .hello-container {
+//       .container-top {
+//         .row-1 {
+//           display: flex;
+//           justify-content: center;
+//         }
+//         .fonts-2 {
+//           display: flex;
+//           justify-content: center;
+//           font-size: 1.5rem;
+//         }
+//       }
+
+//       .profile-contrack {
+//         position: absolute;
+//         left: 1rem;
+//         bottom: 1rem;
+//         .email {
+//           display: flex;
+//           align-items: center;
+//           p {
+//             display: none;
+//           }
+//           &:hover {
+//             p {
+//               display: block;
+//               color: $thirty-color;
+//             }
+//           }
+//           .email-icon {
+//             padding-right: 0;
+//           }
+//         }
+//       }
+//     }
+//     .background {
+//       display: flex;
+//       justify-content: center;
+//       picture {
+//         height: 23rem;
+//         width: 23rem;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 320px){
+
+//    .home {
+//     .container {
+//       display: flex;
+//       flex-direction: column;
+//       height: 90vh;
+//       align-items: center;
+//     }
+//     .hello-container {
+//       .container-top {
+//         .row-1 {
+//           display: flex;
+//           justify-content: center;
+//           p{
+//             font-size: 2.5rem;
+//           }
+//         }
+//         .fonts-2 {
+//           display: flex;
+//           justify-content: center;
+//           font-size: 1rem;
+//         }
+//       }
+
+//       .profile-contrack {
+//         position: absolute;
+//         left: 1rem;
+//         bottom: 1rem;
+//         .email {
+//           display: flex;
+//           align-items: center;
+//           p {
+//             display: none;
+//           }
+//           &:hover {
+//             p {
+//               display: block;
+//               color: $thirty-color;
+//             }
+//           }
+//           .email-icon {
+//             padding-right: 0;
+//           }
+//         }
+//       }
+//     }
+//     .background {
+//       display: flex;
+//       justify-content: center;
+//       picture {
+//         height: 23rem;
+//         width: 23rem;
+//       }
+//     }
+//   }
+// }
