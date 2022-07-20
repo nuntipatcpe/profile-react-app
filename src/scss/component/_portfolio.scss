@@ -1,6 +1,16 @@
 .portfolio {
+
+  .close{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+  }
   @include background;
   background-color: $sixty-color;
+  position: relative;
   .active {
     color: $thirty-color;
   }
@@ -13,6 +23,7 @@
     font-size: $size-medium;
     color: $ten-color;
     font-weight: bold;
+    padding-top: 2rem;
   }
   .input {
     display: flex;
@@ -44,14 +55,23 @@
       justify-content: center;
       height: 400px;
       margin-bottom: 3rem;
+      position: relative;
+
       .card {
+        cursor: pointer;
+        z-index: 0;
         width: 70%;
         height: 100%;
         display: flex;
         flex-direction: column;
         box-shadow: 0px 0px 6px 3px $ten-color;
-        padding: 0 1rem;
+        padding: 0 2rem;
         // padding-right: 1rem;
+
+        &:hover{
+          transform: scale(1.05);
+          transition: .2s ease;
+        }
  
         .title {
           height: 50px;
@@ -67,10 +87,10 @@
           height: 120px;
           object-fit: cover;
           object-position: center;
+
+          
         }
         .card-container {
-     
-
           .type {
             text-transform: uppercase;
             overflow: hidden;
@@ -92,19 +112,28 @@
             }
           }
         }
-        .btn-card {
+      
+      }  
+      
+      .btn-card {
           display: flex;
-          // background: #000;
-          width: 100%;
+          width: 40%;
           height: 40px;
           justify-content: center;
-          
-          button {
-            width: 70%;
+          position:absolute;
+      
+          bottom: -1.2rem;
+          // left: 50%;
+          right: auto;
+          left: auto;
+          a{
             background-color: $ten-color;
             color: $sixty-color;
-            border: 0;
-            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%; 
             &:hover {
               font-weight: bold;
               // background-color: darkcyan;
@@ -112,11 +141,21 @@
               transition: 0.3s ease;
             }
           }
+          // button {
+          //   width: 70%;
+          //   background-color: $ten-color;
+          //   color: $sixty-color;
+          //   border: 0;
+          //   font-weight: bold;
+          //   a{
+          //     background-color: #000;
+          //     width: 100%;
+          //     height: 100%;
+          //   }
+    
+           
+          // }
         }
-
-        // align-items: center;
-        // justify-content: center;
-      }
     }
   }
 }
@@ -144,3 +183,9 @@
 }
 }
 
+#click-view{
+  position: relative;
+    #card-container{
+      position: absolute;
+    }
+}

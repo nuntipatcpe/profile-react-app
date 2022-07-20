@@ -33,11 +33,13 @@
         font-weight: bold;
         font-size: $size-smail;
         li {
+          &:hover{
+            transform: scale(1.1);
+            transition: 0.1s ease;
+        }
           margin-top: 0.5rem;
           cursor: pointer;
-          &:hover {
-            color: $thirty-color;
-          }
+         
         }
       }
     }

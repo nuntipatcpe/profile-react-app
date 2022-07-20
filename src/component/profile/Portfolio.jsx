@@ -2,10 +2,12 @@ import React from "react";
 import { useState } from "react";
 import project from "../../assets/json/project.json";
 import { v4 as uuidv4 } from "uuid";
+import DetailsComponent from "./portfolio/DetailsComponent";
 
 function Portfolio() {
-  // console data = project.map((item))
   const [data, setData] = useState(project);
+  const [close, setClose] = useState(false);
+  const [obj, setObj] = useState({});
 
   const filter = (str) => {
     let upStr = str.toUpperCase();
@@ -21,7 +23,14 @@ function Portfolio() {
       setData(project);
     }
   };
-  // console.log(search);
+
+  const hendleClose = (item) => {
+    setClose(!close);
+    setObj(item);
+    // console.log(item);
+  };
+  // console.log(obj);
+
   return (
     <div id="portfolio" className="portfolio">
       <div className="container">
@@ -38,14 +47,18 @@ function Portfolio() {
             onChange={(e) => filter(e.target.value)}
           />
         </div>
-        
+
         <div className="grit-container">
           {/* grid item */}
 
           {data.map((item) => {
             return (
-              <div key={uuidv4()} className="grid-item">
-                <div className="card">
+              <div
+                key={uuidv4()}
+                className="grid-item"
+    
+              >
+                <div className="card"   onClick={() => hendleClose(item)}>
                   <div className="title">{item.name}</div>
                   <img src={item.img} alt="" />
                   <div className="card-container">
@@ -55,16 +68,33 @@ function Portfolio() {
                       {item.deacription}
                     </div>
                   </div>
-
-                  <div className="btn-card">
-                    <button>View</button>
-                  </div>
                 </div>
+                
+                <div className="btn-card">
+                    <a
+                      target="_blank"
+                      href="https://www.w3schools.com/cssref/pr_background-color.asp"
+                    >
+                      {" "}
+                      View Code
+                    </a>
+                  </div>
               </div>
             );
           })}
         </div>
       </div>
+
+      {close ? (
+        <div>
+          <div className="close" onClick={() => setClose(!close)}>
+            <a href="#details"></a>
+          </div>
+          <DetailsComponent item={obj} />
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 }

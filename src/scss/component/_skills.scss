@@ -22,6 +22,12 @@
         align-items: center;
         font-size: 1.5rem;
         color: $ten-color;
+        li{
+            &:hover{
+                transform: scale(1.1);
+                transition: 0.1s ease;
+                }
+        }
       }
         // background:gold;
     }
@@ -36,8 +42,13 @@
            align-items: center;
            margin-bottom: 2rem;
            margin-top: 5rem;
+           transition: 0.3s ease;
+           &:hover{
+            transform: scale(1.1);
+            transition: 0.3s ease;
+            }
            img{
-            width: 100px
+            width: 100px;
            }
            p{
             margin-top: 2rem;

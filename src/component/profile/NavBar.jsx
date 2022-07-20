@@ -5,30 +5,30 @@ function Navbar() {
   // console.log(click)
 
   return (
-    <div className="navbar">
+    <div className={click ? "navbar active" : "navbar"}>
       <div className="container">
         <div className="head-con">
           <div className="logo">
-            <a href="#home" onClick={()=>setClick(false)}>NUNTIPAT Rukpo</a>
+            <a href="#home" onClick={()=>setClick(false)}>Nuntipat Rukpo</a>
           </div>
 
-          <ul className={click ? "menu active" : "menu"}>
-            <li>
+          <div className={click ? "menu active" : "menu"}>
+      
               <a href="#about" onClick={()=>setClick(false)}>About</a>
-            </li>
-            <li>
+           
+         
               <a href="#resume" onClick={()=>setClick(false)}>Resume</a>
-            </li>
-            <li>
+            
+       
               <a href="#skills" onClick={()=>setClick(false)}>Skills</a>
-            </li>
-            <li>
+       
+      
               <a href="#portfolio" onClick={()=>setClick(false)}>Portfolio</a>
-            </li>
-            <li>
+     
+          
               <a href="#contract" onClick={()=>setClick(false)}>Contract</a>
-            </li>
-          </ul>
+        
+          </div>
           <AiOutlineMenu
             className="logo-menu"
             onClick={() => setClick(!click)}
