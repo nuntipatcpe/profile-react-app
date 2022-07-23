@@ -3,6 +3,8 @@ import { useState } from "react";
 import imgJson from "../../assets/json/img.json";
 import { v4 as uuidv4 } from "uuid";
 
+import img from '../../assets/imgs/css.png';
+
 function Skill() {
   const [active, setActive] = useState("All");
   const [filter, setFilter] = useState(imgJson);
@@ -56,7 +58,7 @@ function Skill() {
           {filter.map((item) => {
             return (
               <div key={uuidv4()} className="grid-item">
-                <img src={item.path} alt={item.topic} />
+                <img src={img} alt={item.topic} />
                 <p>{item.topic}</p>
               </div>
             );
