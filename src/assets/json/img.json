@@ -2,58 +2,58 @@
   {
     "type": "Language",
     "topic": "Javascript",
-    "path": "/src/assets/imgs/javascript.png"
+    "path": "/assets/javascript.png"
   },
   {
     "type": "Language",
     "topic": "Css",
-    "path": "/src/assets/imgs/css.png"
+    "path": "/assets/css.png"
   },
   {
     "type": "Language",
     "topic": "HTML",
-    "path": "/src/assets/imgs/html.png"
+    "path": "/assets/html.png"
   },
   {
     "type": "Language",
     "topic": "java",
-    "path": "/src/assets/imgs/java.png"
+    "path": "/assets/java.png"
   },
 
   {
     "type": "Framework&Libery",
     "topic": "React",
-    "path": "/src/assets/imgs/react.png"
+    "path": "/assets/react.png"
   },
 
   {
     "type": "Framework&Libery",
     "topic": "Redux",
-    "path": "/src/assets/imgs/redux.png"
+    "path": "/assets/redux.png"
   },
   {
     "type": "Framework&Libery",
     "topic": "Sass",
-    "path": "/src/assets/imgs/sass.png"
+    "path": "/assets/sass.png"
   },{
     "type": "Other",
     "topic": "Node",
-    "path": "/src/assets/imgs/node-js.png"
+    "path": "/assets/node-js.png"
   },
   
   {
     "type": "Other",
     "topic": "Git",
-    "path": "/src/assets/imgs/git.png"
+    "path": "/assets/git.png"
   },
   {
     "type": "Other",
     "topic": "Github",
-    "path": "/src/assets/imgs/github.png"
+    "path": "/assets/github.png"
   },
   {
     "type": "Other",
     "topic": "Figma",
-    "path": "/src/assets/imgs/figma.png"
+    "path": "/assets/figma.png"
   }
 ]
