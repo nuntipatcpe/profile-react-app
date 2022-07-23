@@ -2,58 +2,58 @@
   {
     "type": "Language",
     "topic": "Javascript",
-    "path": "/src/assets/imgs/icon/javascript.png"
+    "path": "/src/assets/imgs/javascript.png"
   },
   {
     "type": "Language",
     "topic": "Css",
-    "path": "/src/assets/imgs/icon/css.png"
+    "path": "/src/assets/imgs/css.png"
   },
   {
     "type": "Language",
     "topic": "HTML",
-    "path": "/src/assets/imgs/icon/html.png"
+    "path": "/src/assets/imgs/html.png"
   },
   {
     "type": "Language",
     "topic": "java",
-    "path": "/src/assets/imgs/icon/java.png"
+    "path": "/src/assets/imgs/java.png"
   },
 
   {
     "type": "Framework&Libery",
     "topic": "React",
-    "path": "/src/assets/imgs/icon/react.png"
+    "path": "/src/assets/imgs/react.png"
   },
 
   {
     "type": "Framework&Libery",
     "topic": "Redux",
-    "path": "/src/assets/imgs/icon/redux.png"
+    "path": "/src/assets/imgs/redux.png"
   },
   {
     "type": "Framework&Libery",
     "topic": "Sass",
-    "path": "/src/assets/imgs/icon/sass.png"
+    "path": "/src/assets/imgs/sass.png"
   },{
     "type": "Other",
     "topic": "Node",
-    "path": "/src/assets/imgs/icon/node-js.png"
+    "path": "/src/assets/imgs/node-js.png"
   },
   
   {
     "type": "Other",
     "topic": "Git",
-    "path": "/src/assets/imgs/icon/git.png"
+    "path": "/src/assets/imgs/git.png"
   },
   {
     "type": "Other",
     "topic": "Github",
-    "path": "/src/assets/imgs/icon/github.png"
+    "path": "/src/assets/imgs/github.png"
   },
   {
     "type": "Other",
     "topic": "Figma",
-    "path": "/src/assets/imgs/icon/figma.png"
+    "path": "/src/assets/imgs/figma.png"
   }
 ]
