@@ -56,7 +56,7 @@ function Skill() {
           {filter.map((item) => {
             return (
               <div key={uuidv4()} className="grid-item">
-                <img src={item.path} alt="" />
+                <img src={item.path} alt={item.topic} />
                 <p>{item.topic}</p>
               </div>
             );
