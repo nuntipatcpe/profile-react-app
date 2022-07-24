@@ -57,8 +57,8 @@
       align-items: flex-end;
       justify-content: right;
       picture {
-        height: 25rem;
-        width: 25rem;
+        height: 22vh;
+        width: 22vh;
         background-image: url("/src/assets/imgs/profile.png");
         background-repeat: no-repeat;
         background-position: bottom;
@@ -70,17 +70,11 @@
 }
 
 @media screen and (max-width: $media-query) {
-  $size-medium: 1.5rem;
-  $size-big: 3.5rem;
+  $size-medium: 3vw;
+  $size-big: 6vw;
   .home {
-    max-height: 90vh;
-
+    max-height: 90vw;
     .container-top {
-      // padding: 5rem 0;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      justify-content: center;
       align-items: center;
 
       .content {
@@ -99,6 +93,7 @@
       }
 
       .profile-contrack {
+        z-index: 10;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -107,17 +102,17 @@
         justify-content: center;
         height: 80px;
         .git-icon {
-          width: 2rem;
-          height: 2rem;
+          width: 5vw;
+          height: 5vw;
         }
         .email-icon {
-          width: 2rem;
-          height: 2rem;
+          width: 5vw;
+          height: 5vw;
         }
         .email {
           p {
             display: none;
-            margin-left: 1rem;
+            margin-left: 1vw;
           }
           &:hover {
             p {
@@ -129,7 +124,7 @@
       }
 
       .background {
-        z-index: -1;
+        // z-index: -1;
         position: absolute;
         right: auto;
         left: auto;

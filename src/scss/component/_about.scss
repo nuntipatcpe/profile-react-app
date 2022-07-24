@@ -83,21 +83,11 @@
       p {
         color: $sixty-color;
         text-indent: 3rem;
-        letter-spacing: 1px;
+        // letter-spacing: 1px;
         line-height: normal;
         font-family: $fonts-2;
         font-size: $size-smail;
-        padding: 0 3rem 1rem 3rem;
-        // &:lang(th){
-        //     font-family: $fonts-3;
-        //     color: $sixty-color;
-        //     text-indent: 3rem;
-        //     letter-spacing: 2px;
-        //     line-height: normal;
-        //     font-size: $size-smail;
-        //     // text-align: justify;
-        //     padding: 1rem;
-        // }
+        padding: 0 2rem 2rem 2rem;
       }
     }
   }
@@ -109,17 +99,22 @@
       .nav-about {
         ul {
           font-weight: bold;
-          font-size: 1.3rem;
+          // font-size: 1.3rem;
+          font-size: 2vw;
         }
       }
     }
     .container-rigth {
       .topic {
-        font-size: 2rem;
+        font-size: 4vw;
       }
+      
       .content {
         p {
-          font-size: 1.3rem;
+          font-size: 2vw;
+          text-indent: 0;
+          text-align: center;
+          // justify-content: center;
         }
       }
     }

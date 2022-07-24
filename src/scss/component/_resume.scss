@@ -38,17 +38,9 @@
         font-size: $size-smail;
         background-color: $ten-color;
         color: $sixty-color;
-        
-
         position: relative;
-        .data-1{
-            margin-bottom: 2rem;
-            .icon{
-                position: absolute;
-                left: 2.5rem;
-            }
-        }
     }
+    
     .experience-con{
         display: flex;
         flex-direction: column;
@@ -56,12 +48,17 @@
         align-items: center;
         font-size: $size-smail;
         position: relative;
-        .data-1{
-            margin-bottom: 2rem;
-            .icon{
-                position: absolute;
-                left: 1rem;
-            }
+    }
+
+    .data-1{
+        margin-bottom: 2rem;
+        line-height: normal;
+        .icon{
+            position: absolute;
+            left: 1rem;
+        }
+        h1{
+            font-weight: bold;
         }
     }
     .active{
@@ -78,23 +75,23 @@
             font-size: 2rem;
         }
         .education-con{
+         
             font-size: 1.3rem;
-            .data-1{
-                .icon{
-                    display: none;
-               
-                }
-            }
         }
         .experience-con{
             font-size: 1.3rem;
-            .data-1{
+            
+        }
+        .data-1{
+        font-size: 2vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
                 margin-bottom: 2rem;
                 .icon{
                     display: none;
                 }
             }
-        }
     
     }
    }

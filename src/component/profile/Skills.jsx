@@ -3,12 +3,15 @@ import { useState } from "react";
 import imgJson from "../../assets/json/img.json";
 import { v4 as uuidv4 } from "uuid";
 
+import { AiOutlineMenu } from "react-icons/ai";
 import  { getImg } from '../../assets/imgs/icons';
 
 
 function Skill() {
   const [active, setActive] = useState("All");
   const [filter, setFilter] = useState(getImg());
+
+  const [toggleNav, setToggleNav] = useState(false);
 
 
   // console.log(getImg());
@@ -22,6 +25,13 @@ function Skill() {
     }
   };
 
+  const setHandleClickMenu=(str) =>{
+    setData(str);
+    setToggleNav(false);
+  }
+
+
+
   return (
     <div id="skills" className="skills">
       <div className="container">
@@ -34,31 +44,39 @@ function Skill() {
         </header>
         <nav>
           <ul>
-            <li
+          <div className={toggleNav?"text":"text non"}>{active}</div>
+            <div className={toggleNav?"menu non":"menu"}>
+              <li
               className={active === "All" ? "active" : ""}
-              onClick={() => setData("All")}
+              onClick={() => setHandleClickMenu("All")}
             >
+            
               All
             </li>
             <li
               className={active === "Language" ? "active" : ""}
-              onClick={() => setData("Language")}
+              onClick={() =>   setHandleClickMenu("Language")}
             >
               Language
             </li>
             <li
               className={active === "Framework&Libery" ? "active" : ""}
-              onClick={() => setData("Framework&Libery")}
+              onClick={() =>  setHandleClickMenu("Framework&Libery")}
             >
               Framework&Libery
             </li>
             <li
               className={active === "Other" ? "active" : ""}
-              onClick={() => setData("Other")}
+              onClick={() =>  setHandleClickMenu("Other")
+            }
             >
               Other
             </li>
+            </div>
+        
+            <AiOutlineMenu className="navBar-none" onClick={()=>setToggleNav(!toggleNav)}/>
           </ul>
+
         </nav>
         <div className="grid-container">
           {filter.map((item) => {

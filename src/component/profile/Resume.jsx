@@ -16,13 +16,13 @@ function Resume() {
         <div className="education-con">
           <div className="data-1">
             <MdCastForEducation className="icon" />
-            <p>{"2561-2565"}</p>
+            <h1>{"2561-2565"}</h1>
             <p>{"มหาวิทยาลัยเทคโนโลยีมหานคร"}</p>
             <p>{"วิศวกรรมศาสตร์, คอมพิวเตอร์"}</p>
           </div>
           <div className="data-1">
             <MdCastForEducation className="icon" />
-            <p>{"2554-2560"}</p>
+            <h1>{"2554-2560"}</h1>
             <p>{"มัธยมวัดหนองจอก"}</p>
             <p>{"สาขา วิทยาศาสตร์-คณิตศาสตร์"}</p>
           </div>
@@ -31,7 +31,7 @@ function Resume() {
         <div className="experience-con">
           <div className="data-1">
             <MdWork className="icon" />
-            <p>{"2021-2022"}</p>
+            <h1>{"2021-2022"}</h1>
             <p>{"Business Bulletin Service Co., Ltd."}</p>
             <p>{"Apprentice software developer"}</p>
           </div>
