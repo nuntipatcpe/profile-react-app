@@ -1,5 +1,8 @@
 .portfolio {
-
+  @include background;
+  background-color: $sixty-color;
+  position: relative;
+  height: auto;
   .close{
     position: fixed;
     top: 0;
@@ -8,9 +11,6 @@
     background-color: #000;
     opacity: 0.3;
   }
-  @include background;
-  background-color: $sixty-color;
-  position: relative;
   .active {
     color: $thirty-color;
   }
@@ -117,7 +117,7 @@
       
       .btn-card {
           display: flex;
-          width: 40%;
+          width: 10rem;
           height: 40px;
           justify-content: center;
           position:absolute;
@@ -176,3 +176,12 @@
       position: absolute;
     }
 }
+
+@media screen and (max-width: 628px) {
+  .portfolio {
+    .grit-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  }
+  

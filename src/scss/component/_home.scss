@@ -62,8 +62,8 @@
       align-items: flex-end;
       justify-content: right;
       picture {
-        height: 23rem;
-        width: 23rem;
+        height: 19rem;
+        width: 19rem;
         background-image: url("/src/assets/imgs/profile.png");
         background-repeat: no-repeat;
         background-position: bottom;
@@ -75,8 +75,8 @@
 }
 
 @media screen and (max-width: $media-query) {
-  $size-medium: 3vw;
-  $size-big: 6vw;
+  $size-medium: 1.5rem;
+  $size-big: 3rem;
   .home {
     // max-height: 50vh;
     // background: #000;
@@ -143,8 +143,8 @@
         justify-content: right;
 
         picture {
-          height: 30vw;
-          width: 30vw;
+          height: 15rem;
+          width: 15rem;
           background-image: url("/src/assets/imgs/profile.png");
           background-repeat: no-repeat;
           background-position: bottom;

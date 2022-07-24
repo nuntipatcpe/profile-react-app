@@ -4,7 +4,7 @@
     .container{
         display: grid;
         // width: 100%;
-        height: 90vh;
+        // height: 90vh;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         color: $ten-color;
@@ -68,6 +68,7 @@
 
 @media screen and (max-width: $media-query) {
     .resume{
+        height: 50vh;
         .education-item{
             font-size: 2rem;
         }
@@ -83,7 +84,7 @@
             
         }
         .data-1{
-        font-size: 2vw;
+        font-size: .8rem;
           display: flex;
           flex-direction: column;
           align-items: center;
