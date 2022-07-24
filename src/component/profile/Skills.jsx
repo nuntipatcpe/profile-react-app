@@ -3,17 +3,22 @@ import { useState } from "react";
 import imgJson from "../../assets/json/img.json";
 import { v4 as uuidv4 } from "uuid";
 
-import img from '../../assets/imgs/css.png';
+import  { getImg } from '../../assets/imgs/icons';
+
 
 function Skill() {
   const [active, setActive] = useState("All");
-  const [filter, setFilter] = useState(imgJson);
+  const [filter, setFilter] = useState(getImg());
+
+
+  // console.log(getImg());
+  
   const setData = (type) => {
     setActive(type);
     if (!type.includes("All")) {
-      setFilter(imgJson.filter((item) => item.type.includes(type)));
+      setFilter(getImg().filter((item) => item.type.includes(type)));
     } else {
-      setFilter(imgJson);
+      setFilter(getImg());
     }
   };
 
@@ -21,6 +26,7 @@ function Skill() {
     <div id="skills" className="skills">
       <div className="container">
         <header>
+         
           <div className="active">M</div>
           <div className="">y</div>
           <div className="active">&nbsp;S</div>
@@ -58,7 +64,7 @@ function Skill() {
           {filter.map((item) => {
             return (
               <div key={uuidv4()} className="grid-item">
-                <img src={img} alt={item.topic} />
+                <img src={item.path} alt={item.topic} />
                 <p>{item.topic}</p>
               </div>
             );

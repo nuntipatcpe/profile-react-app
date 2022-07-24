@@ -12,7 +12,7 @@ function Experience() {
     setdata(bio.filter((item) => item.page.includes(str)));
     setColor(str);
   };
-  console.log(data);
+  // console.log(data);
 
   return (
     <div id="about" className="about">
